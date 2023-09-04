@@ -17,7 +17,6 @@ module.exports = async function (context, myTimer) {
     routes.includes(parseInt(e.vehicle.trip.route_id))
   );
 
-  
   context.log(
     `Received ${feed.entity.length} buses positions, found ${buses.length} buses in monitored routes`
   );
