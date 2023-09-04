@@ -21,6 +21,7 @@ module.exports = async function (context, myTimer) {
     `Received ${feed.entity.length} buses positions, found ${buses.length} buses in monitored routes`
   );
 
+  
   // Push data to Azure SQL and get the activated geofences
   const activatedGeofences = await ProcessGeoFences(context, buses);
 
